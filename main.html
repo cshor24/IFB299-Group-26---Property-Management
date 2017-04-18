@@ -1,7 +1,6 @@
 <meta charset="utf-8">
 <html>
 <head>
-
 <script>
 function termsAndConditions() {
 	if (document.getElementById("teesAndCees").checked == false) {
@@ -9,6 +8,21 @@ function termsAndConditions() {
 	}
 	//else load booking form
 }
+
+function makeMain1() {
+	document.getElementById("mainPhoto").src = document.getElementById("photo1").src;
+}
+
+function makeMain2() {
+	document.getElementById("mainPhoto").src = document.getElementById("photo2").src;
+}
+
+function makeMain3() {
+	document.getElementById("mainPhoto").src = document.getElementById("photo3").src;
+}
+
+
+
 </script>
 
 <style>
@@ -60,9 +74,13 @@ section {
 </nav>
 
 <section>
-  <img src="C:/Users/Matt/Desktop/Website/Images/propertyphoto1.jpg" alt="Not Found" style="width:200px;height:200px;border:0;">
-  <img src="C:/Users/Matt/Desktop/Website/Images/propertyphoto2.jpg" alt="Not Found" style="width:200px;height:200px;border:0;">
-  <img src="C:/Users/Matt/Desktop/Website/Images/propertyphoto3.jpg" alt="Not Found" style="width:200px;height:200px;border:0;">
+  <img id="mainPhoto" src="C:/Users/Matt/Desktop/Website/Images/propertyphoto1.jpg" alt="Not Found" style="width:100%;height:350px;border:0;">
+</section>
+
+<section>
+  <img id="photo1" onclick=makeMain1() src="C:/Users/Matt/Desktop/Website/Images/propertyphoto1.jpg" alt="Not Found" style="width:200px;height:200px;border:0;">
+  <img id="photo2" onclick=makeMain2() src="C:/Users/Matt/Desktop/Website/Images/propertyphoto2.jpg" alt="Not Found" style="width:200px;height:200px;border:0;">
+  <img id="photo3" onclick=makeMain3() src="C:/Users/Matt/Desktop/Website/Images/propertyphoto3.jpg" alt="Not Found" style="width:200px;height:200px;border:0;">
 </section>
 
 <article>
